@@ -6,8 +6,108 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Manrope', sans-serif;
+        }
+        .hide{
+            display:hidden;
+        }
+    </style>
 </head>
-    <h1>asif</h1>
 <body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 flex bg-amber-300">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </div>
+                        <ul tabindex="0" class=" menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li><li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                  <a class="btn btn-ghost text-xl">Hockey Champs</a>
+                </div>
+                <div class="navbar-center hidden sm:block">
+                    <ul class="flex gap-x-5 ">
+                        <li><a><span class="text-[#FF4240]">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li><li>
+                        <li><a>Contact</a></li>
+                    </ul>
+            </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle hidden sm:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <button class="btn bg-[#FF4240] text-[#FFF]">Get Ticket</button>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <div class="carousel w-full h-[500px] mt-3">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="bg-[#131318] mx-0 mt-1 hidden lg:block absolute right-8 bottom-8 rounded-md px-3">
+                <h2 class="text-xl font-extrabold text-[#FFFFFF] ">Meet all the heroes from the field</h2>
+                <h3 class="text-base font-medium text-slate-400 ">We have the best quality all over the country with best reputation.
+                    <br>All the the players has come from our club</h3>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>   
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/images.jpeg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+          </div>
+          <div class="bg-[#131318] mx-0 mt-1 lg:hidden">
+            <h2 class="text-4xl font-extrabold text-[#FFFFFF] text-center">Meet all the heroes from the field</h2>
+            <h3 class="text-base font-medium text-[#ffffff99] text-center">We have the best quality all over the country with best reputation.All the the players has come from our club</h3>
+          </div>
+        <h1 class="text-center text-[#131318] font-extrabold mt-3">Professional Hockeys Club</h1>
+        <h3 class="text-center text-[#13131899] font-medium">Here are the all Stats of our hockey Club</h3>
+        <div class="lg:flex mt-10 lg:justify-center lg:gap-20">
+            <div class="mt-5">
+                <div class="radial-progress relative lg:left-[50px] left-[43%] text-[#FF4240] " style="--value:87;" role="progressbar">87%</div>
+                <div class="text-center">Player Facility</div>
+                <div class="text-center">Best facilities for players</div>
+            </div>
+            <div class="mt-5">
+                <div class="radial-progress relative lg:left-[88px] left-[43%] text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                <div class="text-center">Experienced Coach</div>
+                <div class="text-center">Coaches having more than 10 years</div>
+            </div>
+            <div class="mt-5 ">
+                <div class="radial-progress relative lg:left-[25px] left-[43%] text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                <div class="text-center">Senior Player</div>
+                <div class="text-center">Most senior players</div>
+            </div>
+            <div class="mt-5 ">
+                <div class="radial-progress relative lg:left-[62px] left-[43%] text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                <div class="text-center">Training Ground</div>
+                <div class="text-center">Having 10+ training grounds</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
